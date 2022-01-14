@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/main/main-item/main-item",
+    "pages/main/main/main",
+    "pages/main/main-plan/main-plan",
+    "pages/main/main-learn/main-learn",
+    "pages/main/main-shop/main-shop",
+    "pages/main/main-inform/main-inform",
+    "pages/star/star/star",
+    "pages/star/star-detail/star-detail",
+    "pages/star/star-item/star-item",
+    "pages/index/index",
+    "pages/plan/plan-detail/plan-detail",
+    "pages/plan/plan-broadcast/plan-broadcast",
+    "pages/plan/plan-preview/plan-preview"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "borderStyle": "white",
+    "selectedColor": "#000000",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+
+    "list": [
+      {
+        "pagePath": "pages/main/main/main",
+        "text": "首页",
+        "iconPath": "pages/images/main/shouyeTab.png",
+        "selectedIconPath": "pages/images/main/shouyeTab_selected.png"
+      },
+      {
+        "pagePath": "pages/star/star/star",
+        "text": "星球",
+        "iconPath": "pages/images/main/xingqiuTab.png",
+        "selectedIconPath": "pages/images/main/xingqiuTab_selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+ 
+}

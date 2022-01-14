@@ -1,0 +1,106 @@
+/* pages/plan/plan-preview/plan-preview.wxss */
+.allbox{
+  background-color: #f1f3f5;
+  display: flex;
+  flex-direction: column;
+}
+.alltop{
+  width: 630rpx;
+  height: 600rpx;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx;
+  padding: 30rpx;
+  background-color: #ffffff;
+}
+.alltop_tile{
+  font-size: 18px;
+  margin-bottom: 20rpx;
+}
+.alltop image{
+  width: 628rpx;
+  height:360rpx;
+}
+.alltop_text{
+  margin-top: 40rpx;
+  font-size: 19px;
+}
+.alltop_time{
+  margin-top: 20rpx;
+  font-size: 13px;
+  color: #d3d1d2;
+}
+.allbot{
+  width: 630rpx;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx;
+  padding: 30rpx;
+  background-color: #ffffff;
+}
+.allbot_to{
+  border-bottom: 1px solid #d3d1d2;
+  padding-bottom: 20rpx;
+}
+.to_rw{
+  float: left;
+  color: #262626;
+}
+.minbox{
+ float: right;
+}
+.minbox image{
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+}
+.minbox text{
+  margin-bottom: 10rpx;
+  float: left;
+  margin: 0 5rpx;
+  color: #262626;
+}
+.allbot_bo{
+  display: flex;
+  flex-direction: column;
+}
+.bo_lie{
+  margin-top: 40rpx;
+}
+.bo_lie text{
+  float: left;
+}
+.bo_yu{
+  width: 80rpx;
+  height: 50rpx;
+  border-radius: 30rpx;
+  font-size: 13px;
+  background-color: #000000;
+  color: #ffffff;
+  align-items: center; /**子view垂直居中*/
+  display: flex; /*设置显示样式**/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+  float: right;
+}
+.bo_lie image{
+  width: 60rpx;
+  height:60rpx;
+  float: right;
+}
+.allbot_hid view{
+  width: 150rpx;
+  height: 70rpx;
+  border-radius: 8rpx;
+  color: #4b4b4b;
+  background-color: #f0f0f0;
+  align-items: center; /**子view垂直居中*/
+  display: flex; /*设置显示样式**/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+  float: left;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+}

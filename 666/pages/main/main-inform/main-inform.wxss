@@ -1,0 +1,49 @@
+.i1{
+  height: 600rpx;
+  width: 640rpx;
+  /* background: #379354; */
+  opacity: 50%; 
+  margin: auto;
+  display: flex;
+  flex-direction: column;  
+}
+.i1_1{
+  color: salmon;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+}
+.i1_2{
+  color:darkorange;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.i1_3{
+  color: springgreen;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+}
+.i1_4{
+  color: aqua;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+.i1_5{
+  color: aqua;
+  font-size: 30rpx;
+}
+.i1_6{
+  color: blue;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+page{
+  height:100%;
+}
+.background {
+  opacity: 60%;
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}

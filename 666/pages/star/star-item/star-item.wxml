@@ -1,0 +1,14 @@
+<template name="star-tpl">
+
+<view class="ss1"  data-star-id="{{item.starId}}">
+  <image wx:if="{{item.img[0]}}" bindload="imageLoad" src="{{item.img[0]}}" data-index="{{index}}" mode="widthFix"/>
+  <view>
+    <view class="ss1_1">
+      <image src="{{item.userImg}}"/>
+      <text>{{item.username}}</text>
+    </view>
+    <text class="ss1_txt1">{{item.detail}}</text>
+  </view>
+</view>
+
+</template>

@@ -1,0 +1,27 @@
+<import src="../star-item/star-item.wxml"/>
+
+    <mp-tabs tabs="{{tabs}}" activeTab="{{activeTab}}" swiperClass="weui-tabs-swiper" bindtabclick="onTabCLick"
+      bindchange="onChange" activeClass="tab-bar-title__selected">
+      <block wx:for="{{tabs}}" wx:for-index="index" wx:key="title">
+        <view class="tab-content" slot="tab-content-{{index}}"> 
+         <view class="s1">
+          <view>
+            <block wx:for="{{leftList}}" wx:for-item="staritem">
+              <view catchtap="todetail" data-star-id="{{staritem.starId}}">
+               <template is="star-tpl" data="{{item:staritem,index:index}}"></template>
+              </view>
+            </block>
+          </view>
+
+          <view>
+            <block wx:for="{{rightList}}" wx:for-item="staritem">
+              <view catchtap="todetail" data-star-id="{{staritem.starId}}">
+                <template is="star-tpl" data="{{item:staritem,index:index}}"></template>
+              </view>
+            </block>
+          </view>
+
+         </view>
+        </view>
+      </block>   
+    </mp-tabs>

@@ -1,0 +1,8 @@
+
+<view class="login">
+  <image src="/pages/images/main/凯尔特人篮球.jpg"/>
+  <text>创建正向生活</text>
+  <view>
+    <button style="width: 80%"  open-type="getUserInfo" bindtap="bindgetuserinfo">登录</button>
+  </view>
+</view>

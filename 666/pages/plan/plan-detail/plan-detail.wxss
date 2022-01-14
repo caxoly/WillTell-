@@ -1,0 +1,245 @@
+
+.big{
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f3f5;
+}
+.big_img{
+  width: 100%;
+  height:400rpx;
+}
+.big_auto{
+  width: 750rpx;
+  height: 290rpx;
+  background: rgb(255, 255, 255);
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  bottom: 10rpx;
+}
+
+/* 图片详情 */
+.bigimg image{
+  width: 100%;
+}
+.auto_top{
+  width: 690rpx;
+  height: 180rpx;
+  margin: auto;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.top_t{
+  width: 700rpx;
+  height: 80rpx;
+  padding-top: 38rpx;
+}
+.top_t text{
+  font-weight: 500;
+  font-size: 45rpx;
+}
+.top_t image{
+  width: 80rpx;
+  height: 60rpx;
+  float: right;
+  margin-bottom: 11rpx;
+}
+.top_bot{
+  font-size: 27rpx;
+  color: darkgray;
+}
+button::after {
+  border: none;
+}
+button {
+ background-color: #fff;
+}
+.auto_bot{
+  width: 690rpx;
+  margin: auto;
+  margin-top: 25rpx;
+}
+.auto_bot text{
+  font-size: 29rpx;
+  color: rgb(88, 88, 88);
+}
+.auto_bot image{
+  width: 38rpx;
+  height:38rpx;
+  float: right;
+  margin-top: 5rpx;
+}
+
+/* 讲师介绍 */
+.techer{
+  background-color: #ffffff;
+  height: 100rpx;
+}
+.techer_box{
+  width: 27rpx;
+  height: 100rpx;
+  background-color:#ffd3d4;
+  float: left;
+  margin-left: 10rpx;
+}
+.techer text{
+ font-size: 38rpx;
+ font-weight: 600;
+ letter-spacing: 1px;
+ margin-left: 20rpx;
+ margin-top: 50rpx;
+ float: left;
+ color: #000;
+ /* 字体描边 */
+ text-shadow: 10px 0 5px #f87878;
+ /* text-shadow: 3px 0 0px #ffffff, -3px 0 0px #000, 0 3px #000, 0 -3px #000, 3px 3px #000, -3px -3px #000, 3px -3px #000, -3px 3px #000; */
+}
+.deta{
+  height: 100%;
+  background-color: #ffffff;
+}
+.deta_top{
+  height: 300rpx;
+  margin-top: 50rpx;
+}
+.deta_top image{
+  width:420rpx;
+  height: 300rpx;
+  margin-left: 50rpx;
+  float: left;
+}
+.deta_name{
+  display: flex;
+  flex-direction: row;
+}
+.name_box{
+  width: 13rpx;
+  height: 45rpx;
+  background-color: #81b1c2;
+  margin-top: 250rpx;
+}
+.deta_name text{
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 15rpx;
+  margin-top: 250rpx;
+}
+.deta_kun{
+  width:  620rpx;
+  display: flex;
+  margin: auto;
+  margin-top: 40rpx;
+  flex-direction: column;
+}
+.deta_je{
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 10rpx;
+}
+.abtou{
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* table-layout: fixed; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.abtou_yu{
+  width: 300rpx;
+  font-weight: 600;
+  align-items: center; /**子view垂直居中*/
+  display: flex; /*设置显示样式**/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+}
+.abtou_tim{
+  border-radius: 5px;
+  height: 90rpx;
+  width: 500rpx;
+  margin: auto;
+  margin-right: 40rpx;
+  color: #ffffff;
+  font-weight: 500;
+  align-items: center; /**子view垂直居中*/
+  display: flex; /*设置显示样式**/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+  background-color: #d70050;
+}
+
+
+
+/* 计划的确认弹窗 */
+
+
+/* 下方弹窗 */
+.knowall{
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.knowbox{
+  width: 100%;
+  height: 100%;
+  min-height: 500rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.knowbox_title{
+  margin:40rpx auto;
+  font-size: 19px;
+}
+.konw_big{
+  height: 650rpx;
+  display: flex;
+  flex-direction: column;
+}
+.knowbox_auto{
+  width:650rpx;
+  margin-left: 50rpx;
+  margin-top: 40rpx
+}
+.konw_done{
+  display: flex;
+  flex-direction: row;
+}
+.done_ti{
+  width: 6rpx;
+  height: 30rpx;
+  background-color: #d70050;
+  margin-top: 8rpx;
+}
+.konw_done text{
+  font-weight: 600;
+  margin-left: 25rpx;
+}
+.done_text{
+  color: #a5a6a8;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  font-size: 15px;
+  float: left;
+}
+.knowbox_min{
+  width: 650rpx;
+  height: 100rpx;
+  background-color: #df3d7a;
+  color: #ffffff;
+  align-items: center; /**子view垂直居中*/
+  display: flex; /*设置显示样式**/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+  border-radius:5px;
+  margin: 40rpx auto;
+}
+

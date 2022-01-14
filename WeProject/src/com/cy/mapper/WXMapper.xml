@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cy.mapper.WXMapper">	
+	<insert id="addWXUser" parameterType="wxparam">
+		insert into tbl_user(user_img,openid,like_name) values(#{user_img},#{openid},#{like_name})
+	</insert>
+	
+	<select id="getWxuserByopenid" resultType="Long" parameterType="string">
+		select count(1) from tbl_user where openid=#{openid}
+	</select>
+	
+	<select id="GetPost" resultType="post">
+		SELECT * FROM tbl_post WHERE type_id=#{type_id}
+	</select>
+	
+	<select id="GetType" resultType="type">
+		SELECT * FROM tbl_type
+	</select>
+	
+	<select id="getDynamic" resultMap="getUserInDynamic">
+		SELECT u.user_img,u.user_name,u.user_id,u.openid,d.* from tbl_dynamic d join tbl_user u on d.user_id=u.user_id
+	</select>
+		
+	<select id="getDynamicById" resultMap="getUserInDynamic" parameterType="Integer">
+		SELECT u.user_img,u.user_name,u.user_id,u.openid,d.* from tbl_dynamic d join tbl_user u on d.user_id=u.user_id where d.dy_id=#{dy_id}
+	</select> 
+	<resultMap type="dynamic" id="getUserInDynamic">	
+		<id property="dy_id" column="dy_id"/>
+		<result property="dy_img" column="dy_img"/>
+		<result property="dy_detail" column="dy_detail"/>
+		<result property="likeNum" column="likeNum"/>
+		<result property="likeStatus" column="likeStatus"/>
+		<result property="dy_date" column="dy_date"/>		
+		<collection property="ulist" ofType="user">
+			<id property="user_id" column="user_id"/>
+			<result property="user_name" column="user_name"/>
+			<result property="user_img" column="user_img"/>
+			<result property="openid" column="openid"/>
+		</collection>
+	</resultMap>
+	
+	
+	<select id="getCommentById" resultMap="getUserInComment" parameterType="Integer">
+		SELECT c.*,u.user_img,u.user_name,u.openid from tbl_comment c join tbl_user u on c.user_id=u.user_id where c.dy_id=#{dy_id}
+	</select>
+	
+	<resultMap type="comment" id="getUserInComment">
+		<id property="co_id" column="co_id"/>
+		<result property="co_content" column="co_content"/>
+		<result property="create_time" column="create_time"/>
+		
+		<collection property="uslist" ofType="user">
+			<id property="user_id" column="user_id"/>
+			<result property="user_name" column="user_name"/>
+			<result property="user_img" column="user_img"/>
+			<result property="openid" column="openid"/>
+		</collection>
+	</resultMap>
+	
+	<insert id="addComments" parameterType="commentparam">
+		insert into tbl_comment(dy_id,user_id,create_time,co_content) values(#{dy_id},(select user_id from tbl_user where openid=#{openid}),#{create_time},#{co_content})
+	</insert>
+	
+	<update id="setLikeNum" parameterType="likeparam">
+		update tbl_dynamic 
+		<set>
+			<if test="likeNum!=null">
+				likeNum=likeNum+#{num},
+			</if>
+			<if test="likeStatus!=null">
+				likeStatus=#{likeStatus},
+			</if>
+		</set>
+		 where dy_id=#{dy_id}
+	</update>
+	
+</mapper>

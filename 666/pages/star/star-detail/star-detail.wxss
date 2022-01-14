@@ -1,0 +1,151 @@
+.top_1{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+ font-size: 20px;
+ margin: 30rpx;
+ letter-spacing: 2px;
+ color: #4b556c;
+}
+.author-date{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15rpx;
+  margin-left: 30rpx;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image2{
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}
+.author{
+  font-weight: 300;
+  margin-left: 20rpx;
+  color: #666;
+}
+.date{
+  color: #919191;
+  margin-left: 38rpx;
+}
+.detail{
+  color: #666;
+  margin: 40rpx 22rpx 0;
+  line-height:44rpx;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.imageBox{
+  margin-top: 20rpx;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 96%;
+}
+.imageBox>image{
+  height: 260rpx;
+  margin: 40rpx 5rpx 0 5rpx;
+}
+.tool{
+  height: 40rpx;
+  width: 320rpx;
+  margin:40rpx auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tool-item{
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+.tool-item image{
+  margin: auto;
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+
+.comment{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow-y: auto;
+  display: flex; 
+  flex-direction: column; 
+}
+.comment>text{
+  color:#8c8c8c;
+  font-size: 18px;
+  margin: 20rpx 20rpx;
+}
+.commentBox{
+  border: 2px solid #f5f7f9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+.commentBox>image{
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 50%;
+}
+.commentBox>view{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 20rpx;
+}
+.username{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12px;
+  color: #595959;
+}
+.time{
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.userComment{
+  font-family: serif;
+  color: #8a8a8a;
+}
+
+/*评论框*/
+.top2{
+  height:200rpx;
+  border:1px solid #f5f7f9;
+}
+.top2_1{
+  margin-top:50rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  width: 100%;
+  border:1px solid #f5f7f9;
+  display: flex;
+  flex-direction: row;
+}
+.top2_1>input{
+  width: 70%;
+  line-height: 80rpx;
+  height: 80rpx;
+  margin-left: 30rpx;
+}
+.top2_1>input{
+  width: 70%;
+  height: 80rpx;
+  margin-left: 30rpx;
+}
+.top2_1>text{
+  margin-left: 60rpx;
+}

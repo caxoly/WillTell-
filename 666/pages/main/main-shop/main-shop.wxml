@@ -1,0 +1,103 @@
+<view>
+  <view class="first">
+    <text class="hot_text">热门推荐</text>
+    <swiper indicator-dots="{{indicatorDots}}"indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items="1.15"class="swiper_box" vertical="{{vertical}}" indicator-color="#faa"  >
+      <swiper-item class="swiper_i">
+        <view class="swiper_view">
+          <view class="hot_text_1">
+           <text>文创精选</text>
+          </view>
+          <view class="goods_view">
+            <view class="goods_view_1">
+              <image src="/images/preview.gif" class="goods_view_img"></image>
+              <view class="goods_text">
+                <text>青春修炼手册</text>
+                <text class="goods_text_1">giao!!!!!</text>
+              </view>
+              <text class="goods_text_2">￥999.9</text>
+            </view>
+            <view class="goods_view_1">
+              <image src="/images/preview.gif" class="goods_view_img"></image>
+              <view class="goods_text">
+                <text>青春修炼手册</text>
+                <text class="goods_text_1">giao!!!!!</text>
+              </view>
+              <text class="goods_text_2">￥999.9</text>
+            </view>
+            <view class="goods_view_1">
+              <image src="/images/preview.gif" class="goods_view_img"></image>
+              <view class="goods_text">
+                <text>青春修炼手册</text>
+                <text class="goods_text_1">giao!!!!!</text>
+              </view>
+              <text class="goods_text_2">￥999.9</text>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item class="swiper_i">
+       <view class="swiper_view">
+         <view class="hot_text_1">
+          <text>运动服饰</text>
+         </view>
+         <view class="goods_view">
+            <view class="goods_view_1">
+              <image src="/images/preview.gif" class="goods_view_img"></image>
+              <view class="goods_text">
+                <text>青春修炼手册</text>
+                <text class="goods_text_1">giao!!!!!</text>
+              </view>
+              <text class="goods_text_2">￥999.9</text>
+            </view>
+            <view class="goods_view_1">
+              <image src="/images/preview.gif" class="goods_view_img"></image>
+              <view class="goods_text">
+                <text>青春修炼手册</text>
+                <text class="goods_text_1">giao!!!!!</text>
+              </view>
+              <text class="goods_text_2">￥999.9</text>
+            </view>
+            <view class="goods_view_1">
+              <image src="/images/preview.gif" class="goods_view_img"></image>
+              <view class="goods_text">
+                <text>青春修炼手册</text>
+                <text class="goods_text_1">giao!!!!!</text>
+              </view>
+              <text class="goods_text_2">￥999.9</text>
+            </view>
+          </view>
+       </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="second">
+    <text class="hot_text">人气单品</text>
+    <scroll-view scroll-x="{{scroll}}" class="scroll_box">
+        <view class="scroll_view">
+          <image src="/images/preview.gif" class="scroll_img"></image>
+          <text class="scroll_text">青春修炼手册</text>
+          <text class="scroll_text_1">￥999.9</text>
+        </view>
+        <view class="scroll_view">
+          <image src="/images/preview.gif" class="scroll_img"></image>
+          <text class="scroll_text">青春修炼手册</text>
+          <text class="scroll_text_1">￥999.9</text>
+        </view>
+        <view class="scroll_view">
+          <image src="/images/preview.gif" class="scroll_img"></image>
+          <text class="scroll_text">青春修炼手册</text>
+          <text class="scroll_text_1">￥999.9</text>
+        </view>
+        <view class="scroll_view">
+          <image src="/images/preview.gif" class="scroll_img"></image>
+          <text class="scroll_text">青春修炼手册</text>
+          <text class="scroll_text_1">￥999.9</text>
+        </view>
+        <view class="scroll_view">
+          <image src="/images/preview.gif" class="scroll_img"></image>
+          <text class="scroll_text">青春修炼手册</text>
+          <text class="scroll_text_1">￥999.9</text>
+        </view>
+    </scroll-view>
+   </view>
+</view>

@@ -1,0 +1,19 @@
+<template name="item-tpl">
+
+  <view class="itembox">
+    <image src="{{post_img}}"/>
+    <view class="itembox_1">
+      <text>{{post_name}}</text>
+      <view class="itembox_1_1">
+        <block wx:for="{{post_card}}">
+         <view>{{item}}</view>
+        </block>
+      </view>
+      <view class="itembox_1_2">
+        <text>11234人加入计划</text>
+        <view>立即加入</view>
+      </view>
+    </view>
+  </view>
+
+</template>

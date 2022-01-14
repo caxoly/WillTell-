@@ -1,0 +1,52 @@
+<view class="top_1" data-star-id="{{star.starId}}">
+  <view class="author-date">
+    <view class="box">
+      <image class="image2" src="{{!star.ulist[0].openid?(baseImg+star.ulist[0].user_img):(star.ulist[0].user_img)}}"/>
+      <text class="author">{{star.ulist[0].user_name}}</text>
+      <text class="date">{{star.date}}</text>
+    </view>  
+  </view>
+
+  <text class="detail" wx:if="{{star.detail}}">{{star.detail}}</text>
+  <view class="imageBox" wx:if="{{star.img}}">
+    <block wx:for="{{star.img}}" wx:for-item="imgItem" wx:for-index="imgIndex">
+      <image src="{{imgItem}}" data-index="{{index}}" data-img-index="{{imgIndex}}" catchtap="showImg" mode="widthFix"/>
+    </block>
+   </view>
+</view>
+
+<view class="tool">
+  <view class="tool-item" catchtap="jumpUp" data-star-id="{{star.starId}}">
+    <image wx:if="{{star.upStatus}}" src="../../images/main/wx_app_liked.png"/>
+    <image wx:else src="../../images/main/wx_app_like.png"/>
+    <text>{{star.upNum}}</text>
+  </view>
+  <view class="tool-item" catchtap="onComment" data-star-id="{{star.starId}}">
+    <image src="../../images/main/wx_app_message.png" catchtap="showSend"/>
+    <text>{{comments.length}}</text>
+  </view>
+</view>
+
+<view style="height:30rpx;width:100%;background:#f5f7f9"></view>
+
+<view class="comment">
+  <text>评论·{{comments.length}}</text>
+  <block wx:for="{{comments}}" wx:for-item="item">
+    <view class="commentBox">
+      <image src="{{item.avatar}}"/>
+      <view>
+        <text class="username">{{item.nickName}}</text>
+        <text class="time">{{item.create_time}}</text>
+        <text class="userComment">{{item.txt}}</text>
+      </view>
+    </view>
+  </block>  
+</view>
+
+<view class="top2">
+  <view class="top2_1" wx:if="{{isShow}}">
+    <input type="text" placeholder="说点什么" value="{{key}}" bindconfirm="send" bindinput="getValue" placeholder-style="color: #bfbfbf;"/>
+    <text catchtap="send">提交</text>
+  </view>
+</view>
+

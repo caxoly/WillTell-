@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/main/main/main",
+          "pathName": "pages/main/main/main",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/main/main-item/main-item",
+          "pathName": "pages/main/main-item/main-item",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/main/main-inform/main-inform",
+          "pathName": "pages/main/main-inform/main-inform",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/main/main-plan/main-plan",
+          "pathName": "pages/main/main-plan/main-plan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/main/main-learn/main-learn",
+          "pathName": "pages/main/main-learn/main-learn",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/star/star/star",
+          "pathName": "pages/star/star/star",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/star/star-item/star-item",
+          "pathName": "pages/star/star-item/star-item",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/star/star-detail/star-detail",
+          "pathName": "pages/star/star-detail/star-detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

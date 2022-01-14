@@ -1,0 +1,100 @@
+
+<view class="bigbox">
+  <view class="big">
+    <!-- 上方图片 -->
+    <image class="big_img" mode="aspectFill" src="{{post.post_img}}"></image>
+
+    <!-- 标题等 -->
+    <view class="big_auto">
+      <view class="auto_top">
+        <view class="top_t">
+        <text>{{post.post_name}}</text>
+          <button class="btn" hover-class="none" open-type="share" style="position: relative; left: 274rpx; top: -70rpx; width: 134rpx; height: 82rpx; display: block; box-sizing: border-box">
+          <image src="../../../images/icon/share02.png"></image>
+          </button>
+        </view>
+        <text class="top_bot">2079人加入计划</text>
+      </view>
+      <view class="auto_bot" bindtap="popup">
+        <text>有奖励金.专属班级.助教辅导.成长报告</text>
+        <image src="../../../images/icon/sanhui.png"></image>
+      </view>
+    </view>
+
+
+    <!-- 讲师介绍 -->
+    <view class="techer">
+        <view class="techer_box"></view>
+        <text>讲师介绍</text>
+    </view>
+    <view class="deta">
+      <view class="deta_top">
+        <image mode="aspectFill" src="{{post.teacher_img}}"></image>
+        <view class="deta_name">
+          <view class="name_box"></view>
+          <text>{{post.teacher_name}}</text>
+        </view>   
+      </view>
+      <view class="deta_kun">
+        <block wx:for="{{post.price}}">
+          <text class="deta_je">{{item}}</text>
+        </block>
+       
+      </view>
+    </view>
+
+    <!-- 图片详情 -->
+    <view class="bigimg">
+      <image mode="widthFix" src="{{post.pd_img}}"></image>
+    </view>
+  </view>
+</view>
+
+
+<!-- 预览 -->
+<view class="abtou" wx:if="{{isbottom}}">
+    <view class="abtou_yu" catchtap="yulan">免费体验</view>
+    <view class="abtou_tim" catchtap="joinplan">
+      <view wx:if="{{planStatus}}">加入计划</view>
+      <view wx:else>已加入</view>
+    </view>    
+</view>
+
+
+<!-- 下方弹窗 -->
+<page-container show="{{show}}"  round="true">
+  <view class="knowbox">
+    <text class="knowbox_title">计划属性</text>
+    <view class="konw_big">
+      <view class="knowbox_auto">
+        <view class="konw_done">
+          <view class="done_ti"></view>
+          <text>有奖励金</text>
+        </view>
+        <text class="done_text">加入计划啊即可获得实物，全勤后有奖励金</text>
+      </view>
+      <view class="knowbox_auto">
+        <view class="konw_done">
+          <view class="done_ti"></view>
+          <text>专属班级</text>
+        </view>
+        <text class="done_text">专属社群服务，社群组织互勉，交流经历感悟</text>
+      </view>
+      <view class="knowbox_auto">
+        <view class="konw_done">
+          <view class="done_ti"></view>
+          <text>助教辅导</text>
+        </view>
+        <text class="done_text">每天一小时助教群内辅导，解答学习疑惑；</text>
+      </view>
+      <view class="knowbox_auto">
+        <view class="konw_done">
+          <view class="done_ti"></view>
+          <text>成长报告</text>
+        </view>
+        <text class="done_text">将陪伴并记录您每日的努力，计划完结时将为您呈现结果，全勤完成用户将获得计划证书</text>
+      </view>
+    </view>
+    <view class="knowbox_min" bindtap="exit">我知道了</view>
+  </view>
+</page-container>

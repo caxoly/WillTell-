@@ -1,0 +1,67 @@
+<import src="../main-item/main-item.wxml"/>
+<view class="top1">
+  <view class="top1_1">
+    <image src="../../images/main/1.png"/>
+  </view>
+  <view class="top1_2">
+    <view class="search">
+      <icon type="search"  class="search-img" size="20" color="#405f80"/>
+      <input type="text" placeholder="搜索计划或自习" placeholder-class="placeholder"/>
+      <image src="../../images/main/search_xx.png"  class="xx-img"/>
+    </view>
+    <image src="../../images/main/fenlei.png"/>
+  </view>
+  <view class="top1_3">
+    <view class="top1_3_1" catchtap="toPlan">
+      <text class="top1_3_text1">计划></text>
+      <text class="top1_3_text2">时间看得见</text>
+      <image src="../../images/main/jihua.png"/>
+    </view>
+    <view class="top1_3_2">
+      <view class="top1_3_2_1" catchtap="toLearn">
+        <text class="top1_3_text1">自习></text>
+        <text class="top1_3_text2" style="margin-top:8rpx">掌握主动权</text>
+        <image src="../../images/main/zixi.png"/>
+      </view>
+      <view class="top1_3_2_2" catchtap="toshop">
+        <text class="top1_3_text1" style="margin-top:10rpx;margin-left: 10rpx;">小店></text>
+        <text class="top1_3_text2" style="margin-top:-10rpx;margin-left:10rpx">潇洒好物集</text>
+        <image src="../../images/main/xiaodian.png"/>
+      </view>
+    </view>
+  </view>
+  <view class="top1_4" catchtap="toMainInfrom">
+    <view class="top1_4_1">广播站</view>
+    「趁早跑步燃脂100天」 等你开跑! 2小时前         
+    <text>></text>
+  </view>
+  <view class="top1_5">
+    <swiper indicator-dots="{{indicatordots}}" autoplay="true" interval="2000">
+      <swiper-item>
+        <image src="../../images/main/swiper_1.png"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/main/swiper_2.png"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/main/swiper_3.png"/>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="top1_6">
+    <mp-tabs tabs="{{tabs}}" activeTab="{{activeTab}}" swiperClass="weui-tabs-swiper" bindtabclick="onTabCLick"
+      bindchange="onChange" activeClass="tab-bar-title__selected">
+      <block wx:for="{{tabs}}" wx:key="title">
+        <view class="tab-content" slot="tab-content-{{index}}"> 
+          <block wx:for="{{postList}}" wx:for-item="postitem">
+            <view catchtap="immediately" data-post-id="{{postitem.post_id}}">
+              <template is="item-tpl" data="{{...postitem}}"></template>
+            </view>   
+          </block>
+          <!-- {{item.title}} -->
+          </view>
+      </block>
+    </mp-tabs>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/plan/plan-broadcast/plan-broadcast.wxml-->
+<view class="qunbox">
+  <image class="qunbox_img" mode="aspectFill" src="{{cast.post_img}}"></image>
+  <view class="qunbox_auto">
+    <image class="auto_img" mode="aspectFill" src="{{cast.post_img}}"></image>
+    <view class="auto_min">
+      <text class="min_xo">{{cast.post_name}}</text>
+    </view>
+  </view>
+  <view class="qunbox_icon">
+    <view class="icon_wb">
+      <text>任务内容</text>
+      <view class="hidebox"></view>
+    </view>
+  </view>
+
+  <!-- 任务内容显示文本 -->
+  <view class="qunbox_wb">
+    <image mode="widthFix" src="{{cast.cast_img}}"></image>
+    <view class="wb_minwb">
+      <text>{{cast.cast_text}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+/* pages/plan/plan-broadcast/plan-broadcast.wxss */
+.qunbox{
+  background-color: #f5f7f9;
+}
+.qunbox_img{
+  width: 100%;
+  height: 450rpx;
+}
+.qunbox_auto{
+  width: 630rpx;
+  height: 130rpx;
+  margin: 50rpx auto;
+  background-color: #ebedef;
+}
+.auto_img{
+  width: 140rpx;
+  height: 130rpx;
+  float: left;
+}
+.auto_min{
+  width: 400rpx;
+  height: 100rpx;
+  margin:20rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+.min_xo{
+  margin-top: 20rpx;
+}
+.auto_hui{
+  margin-top: 15rpx;
+  font-size: 26rpx;
+  color: #818283;
+}
+.qunbox_icon{
+  display: flex;
+  flex-direction: row;
+}
+.icon_wb{
+  margin: auto;
+}
+.icon_wb text{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.hidebox{
+ width: 40rpx;
+ height: 8rpx;
+ background-color: #d70050;
+ margin: auto;
+}
+
+/* 任务内容 */
+.qunbox_wb{
+  margin-top: 40rpx;
+}
+.qunbox_wb image{
+  margin-left: 38rpx;
+  width: 90%;
+}
+.wb_minwb{
+  /* background-color: #d70050; */
+  width: 690rpx;
+  margin: 30rpx;
+  color: #6f6f70;
+  letter-spacing: 1rpx;
+}
+

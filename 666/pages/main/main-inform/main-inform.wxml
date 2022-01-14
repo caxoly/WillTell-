@@ -1,0 +1,12 @@
+<view>
+  <image class='background' src="../../images/main/凯尔特人篮球.jpg" mode="aspectFill"/>
+  <view class="i1">
+    <!-- <image class='background' src="../../images/main/凯尔特人篮球.jpg" mode="aspectFill"/> -->
+    <text class="i1_1">趁早6月计划上线通知</text>
+    <text class="i1_2">2021.06.01</text>
+    <text class="i1_3">前线速报</text>
+    <text class="i1_4">6月1日-跑步燃脂100天@孙喜哲</text>
+    <text class="i1_5">6月15日-PPT模拟人生100天@Alex-大表哥</text>
+    <text class="i1_6">6月的这两个计划，喜欢的冲哇!</text>
+  </view>
+</view>

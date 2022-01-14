@@ -1,0 +1,46 @@
+<!--pages/plan/plan-preview/plan-preview.wxml-->
+<view class="allbox">
+  <!-- 打卡任务 -->
+  <view class="alltop">
+    <text class="alltop_tile">打卡任务</text>
+    <image  mode="aspectFill" src="{{post.post_img}}"></image>
+    <text class="alltop_text">{{post.post_name}}</text>
+    <text class="alltop_time">计时 100天</text>
+  </view>
+  <!-- 全部任务 -->
+  <view class="allbot">
+    <view class="allbot_to" catchtap="showother">
+      <text class="to_rw">全部任务</text>
+      <!-- 点击事件 -->
+      <view class="minbox">
+        <image src="../../../images/icon/lie.png"></image>
+        <text>共100天</text>
+        <image wx:if="{{Strudes}}" src="../../../images/icon/jiantouxia.png"></image>
+        <image wx:else src="../../../images/icon/jiantoushang.png"></image>
+      </view>
+    </view>
+    <!-- 双向显示 -->
+    <!-- 无操作时显示 -->
+    <view class="allbot_bo" wx:if="{{isHide}}">
+      <view class="bo_lie" wx:if="{{isDay}}">
+        <text>Day1 任务打卡</text>
+        <view class="bo_yu" catchtap="nextyu">预览</view>
+      </view>
+      <block wx:for="{{list}}">
+        <view class="bo_lie">
+          <text>Day{{item+2}} 任务打卡</text>
+          <image src="../../../images/icon/sou.png"></image>
+        </view>
+      </block>
+    </view>
+    <!-- 点击后显示 -->
+    <view class="allbot_hid" wx:if="{{isShow}}">
+      <view catchtap="showlist1">1-20</view>
+      <view catchtap="showlist2">20-40</view>                         
+      <view catchtap="showlist3">40-60</view>
+      <view catchtap="showlist4">60-80</view>
+      <view catchtap="showlist5">80-100</view>
+    </view>
+  </view>
+</view>
+
